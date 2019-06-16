@@ -409,23 +409,23 @@ extension SPPermissionDialogController {
     fileprivate func description(for permission: SPPermissionType) -> String {
         switch permission {
         case .camera:
-            return "Allow app for use camera"
+            return "Discover and view AR content around you"
         case .calendar:
             return "Application can add events to calendar"
         case .contacts:
             return "Access for your contacts and phones"
         case .microphone:
-            return "Allow record voice from app"
+            return "Record video with sound"
         case .notification:
             return "Get important information without opening app."
         case .photoLibrary:
-            return "Access for save photos in your gallery"
+            return "Save and access content from your library"
         case .reminders:
             return "Application can create new task"
         case .speech:
             return "Allow to check your voice"
         case .locationWhenInUse, .locationAlwaysAndWhenInUse:
-            return "Allow to access your location"
+            return "See content around you"
         case .motion:
             return "Allow to report motion and environment-related data"
         case .mediaLibrary:
