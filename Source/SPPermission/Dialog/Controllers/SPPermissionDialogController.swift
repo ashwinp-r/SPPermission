@@ -78,7 +78,7 @@ public class SPPermissionDialogController: UIViewController {
             closeIconColor: self.colorSource?.closeIconColor ?? SPPermissionStyle.DefaultColors.blue
         )
         
-        self.backgroundView.setGradeAlpha(0, blurRaius: 0)
+        self.backgroundView.setGradeAlpha(1, blurRaius: 0)
         self.view.addSubview(self.backgroundView)
         
         self.bottomLabel.text = (self.dataSource?.bottomComment ?? "")

@@ -55,7 +55,7 @@ import UIKit
         case .speech:
             return "Speech"
         case .locationWhenInUse:
-            return "Location When Use"
+            return "Location"
         case .locationAlwaysAndWhenInUse:
             return "Location Always"
         case .motion:
