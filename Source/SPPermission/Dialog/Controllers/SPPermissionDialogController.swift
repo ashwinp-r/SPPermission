@@ -105,8 +105,8 @@ public class SPPermissionDialogController: UIViewController {
                 image: self.dataSource?.image?(for: permission)
             )
             view.backgroundColor = UIColor.clear
-            self.view.layer.borderWidth = 1.0
-            self.view.layer.borderColor = UIColor.lightGray.cgColor
+            view.layer.borderWidth = 1.0
+            view.layer.borderColor = UIColor.lightGray.cgColor
             view.titleLabel.textColor = self.colorScheme.black
             view.subtitleLabel.textColor = self.colorScheme.gray
             view.separatorView.backgroundColor = self.colorScheme.gray.withAlphaComponent(0.3)
