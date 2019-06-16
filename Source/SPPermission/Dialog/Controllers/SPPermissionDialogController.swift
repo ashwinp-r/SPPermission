@@ -91,7 +91,7 @@ public class SPPermissionDialogController: UIViewController {
         
         self.areaView.subtitleLabel.text = (self.dataSource?.dialogSubtitle ?? "Permissions Request").uppercased()
         self.areaView.titleLabel.text = (self.dataSource?.dialogTitle ?? "Need Permissions")
-        self.areaView.backgroundColor = self.colorScheme.white
+        self.areaView.backgroundColor = UIColor.clear
         self.areaView.subtitleLabel.textColor = self.colorScheme.gray
         self.areaView.titleLabel.textColor = self.colorScheme.black
         self.areaView.descriptionLabel.textColor = self.colorScheme.gray
@@ -104,7 +104,9 @@ public class SPPermissionDialogController: UIViewController {
                 allowedTitle: self.dataSource?.allowedTitle ?? "Allowed",
                 image: self.dataSource?.image?(for: permission)
             )
-            view.backgroundColor = self.colorScheme.white
+            view.backgroundColor = UIColor.clear
+            self.view.layer.borderWidth = 1.0
+            self.view.layer.borderColor = UIColor.lightGray.cgColor
             view.titleLabel.textColor = self.colorScheme.black
             view.subtitleLabel.textColor = self.colorScheme.gray
             view.separatorView.backgroundColor = self.colorScheme.gray.withAlphaComponent(0.3)
