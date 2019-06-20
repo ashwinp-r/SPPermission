@@ -242,7 +242,7 @@ public class SPPermissionDialogController: UIViewController {
                                 self.closeButton.alpha = 1
                             }
                         } else {
-                            if !(self.dataSource?.dragEnabled ?? true) {
+                            if !(self.dataSource?.dragEnabled ?? false) {
                                 self.closeButton.alpha = 1
                             }
                         }
@@ -292,7 +292,7 @@ public class SPPermissionDialogController: UIViewController {
     }
     
     private func setupPanGesture() {
-        if (self.dataSource?.dragEnabled ?? true) {
+        if (self.dataSource?.dragEnabled ?? false) {
             let panGesture = UIPanGestureRecognizer.init(target: self, action: #selector(self.handleGesture(sender:)))
             panGesture.maximumNumberOfTouches = 1
             self.areaView.addGestureRecognizer(panGesture)
