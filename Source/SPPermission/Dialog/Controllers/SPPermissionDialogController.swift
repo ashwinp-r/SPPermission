@@ -243,7 +243,7 @@ public class SPPermissionDialogController: UIViewController {
                             }
                         } else {
                             if !(self.dataSource?.dragEnabled ?? false) {
-                                self.closeButton.alpha = 1
+                                self.closeButton.alpha = 0
                             }
                         }
                     })
