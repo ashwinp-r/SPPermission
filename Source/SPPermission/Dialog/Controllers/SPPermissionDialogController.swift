@@ -417,19 +417,19 @@ extension SPPermissionDialogController {
         case .microphone:
             return "Record video with sound"
         case .notification:
-            return "Get important information without opening app."
+            return "Get updates on the world around you."
         case .photoLibrary:
-            return "Save and access content from your library"
+            return "Save and post content to or from your library"
         case .reminders:
             return "Application can create new task"
         case .speech:
             return "Allow to check your voice"
         case .locationWhenInUse, .locationAlwaysAndWhenInUse:
-            return "See content around you"
+            return "See location relevant content"
         case .motion:
             return "Allow to report motion and environment-related data"
         case .mediaLibrary:
-            return "Allow to check your media"
+            return "Post media content from your library"
         }
     }
 }
