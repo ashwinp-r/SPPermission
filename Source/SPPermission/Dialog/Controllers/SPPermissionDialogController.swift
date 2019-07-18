@@ -391,7 +391,7 @@ public class SPPermissionDialogController: UIViewController {
     }
     
     @objc func handleTap() {
-        self.hide(withDialog: true)
+//        self.hide(withDialog: true)
     }
     
     //MARK: - Other
